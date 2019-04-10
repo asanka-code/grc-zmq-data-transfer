@@ -27,10 +27,10 @@ def subscriber():
         data = data[0::2] + 1j*data[1::2]
         print(type(data))
         print(len(data))
-        plt.figure()
-        plt.psd(data, NFFT=len(data), Fs=4e6, Fc=1e3)
-        plt.savefig("psd_sub.png")
-        time.sleep(0.5)
-        exit()
+        #plt.figure()
+        #plt.psd(data, NFFT=len(data), Fs=4e6, Fc=1e3)
+        #plt.savefig("psd_sub.png")
+        #time.sleep(0.5)
+        #exit()
         
 subscriber()
